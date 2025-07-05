@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <title>Details</title>
+</head>
+<body class="bg-bg-light dark:bg-deep-night font-nunito">
+    <header class="bg-white dark:bg-midnight-blue py-5 shadow">
+        <div class="container mx-auto flex justify-between">
+            <h1 class="text-2xl font-extrabold text-text-grey dark:text-white">
+                Where in the world?
+            </h1>
+
+            <button id="dark-mode-btn" class="flex items-center gap-2 text-text-grey dark:text-white font-semibold cursor-pointer">
+                <ion-icon id="moon-icon" name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-18">
+        <div>
+            <a 
+                href="/rest-country/public/index.html"
+                class="flex justify-center items-center gap-3 w-36 py-3 rounded-md shadow-2xl bg-white dark:bg-midnight-blue text-text-grey dark:text-white"
+            >
+                <ion-icon name="arrow-back-outline" class="text-xl"></ion-icon>
+                <span>Back</span>
+            </a>
+        </div>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-36 mt-18">
+            <div>
+                <img 
+                    id="country-image"
+                    class="w-full h-96 object-cover"
+                >
+            </div>
+
+            <div class="mt-10">
+                <h2 class="text-text-grey dark:text-white font-extrabold text-3xl" id="title">Belgica</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 md:gap-24 mt-5 text-text-grey dark:text-white">
+                    <div>
+                        <p class="mt-2 font-semibold">
+                            Native name: <span class="font-light" id="name"></span>
+                        </p>
+
+                        <p class="mt-2 font-semibold">
+                            Population: <span class="font-light" id="population"></span>
+                        </p>
+
+                        <p class="mt-2 font-semibold">
+                            Region: <span class="font-light" id="region"></span>
+                        </p>
+
+                        <p class="mt-2 font-semibold">
+                            Subregion: <span class="font-light" id="subregion"></span>
+                        </p>
+
+                        <p class="mt-2 font-semibold">
+                            Capital: <span class="font-light" id="capital"></span>
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="mt-2 font-semibold">
+                            Top level domain: <span class="font-light" id="tld"></span>
+                        </p>
+                        <p class="mt-2 font-semibold">
+                            Currency: <span class="font-light" id="currency"></span>
+                        </p>
+                        <p class="mt-2 font-semibold">
+                            Languages: <span class="font-light" id="language"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../src/js/details.js" ></script>
+    <script src="../src/js/dark-mode.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
