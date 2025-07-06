@@ -64,7 +64,7 @@ function initApp() {
             const imageContainer = document.createElement('DIV')
             imageContainer.classList.add('w-full', 'h-40')
             const image = document.createElement('IMG')
-            image.classList.add('w-full', 'h-full', 'object-cover', )
+            image.classList.add('w-full', 'h-40', 'object-cover', )
             image.src = country.flags.png
             image.alt = country.flags.alt
             imageContainer.appendChild(image)
