@@ -57,7 +57,7 @@ function initApp() {
 
         countries.forEach(country => {
             const card = document.createElement('A')
-            card.href = `/rest-country/details.html?name=${country.name.common}`
+            card.href = `/details.html?name=${country.name.common}`
             card.classList.add('rounded-md', 'overflow-hidden', 'hover:scale-105', 'transition-transform', 'shadow-md')
 
             //IMAGE
