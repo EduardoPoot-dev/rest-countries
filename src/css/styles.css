@@ -592,9 +592,9 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
-  .h-40 {
-    height: calc(var(--spacing) * 40) /* 10rem = 160px */;
-}
+  .h-52 {
+    height: calc(var(--spacing) * 52) /* 13rem = 208px */;
+  }
   .dark\:bg-deep-night {
     &:where([data-theme=dark], [data-theme=dark] *) {
       background-color: var(--color-deep-night);
