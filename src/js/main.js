@@ -57,14 +57,14 @@ function initApp() {
 
         countries.forEach(country => {
             const card = document.createElement('A')
-            card.href = `/details.html?name=${country.name.common}`
+            card.href = `/rest-country/details.html?name=${country.name.common}`
             card.classList.add('rounded-md', 'overflow-hidden', 'hover:scale-105', 'transition-transform', 'shadow-md')
 
             //IMAGE
             const imageContainer = document.createElement('DIV')
-            imageContainer.classList.add('h-40')
+            imageContainer.classList.add('w-full', 'h-40')
             const image = document.createElement('IMG')
-            image.classList.add('w-full', 'h-full', 'object-cover')
+            image.classList.add('w-full', 'h-full', 'object-cover', )
             image.src = country.flags.png
             image.alt = country.flags.alt
             imageContainer.appendChild(image)
