@@ -48,7 +48,7 @@ function initApp() {
         borders.forEach(async border => {
             const country = await getCountryByCode(border)
             const li = document.createElement('LI')
-            li.classList.add('inline', 'py-2', 'px-4', 'bg-white', 'w-auto', 'shadow-2xl', 'text-sm')
+            li.classList.add('inline', 'py-2', 'px-4', 'bg-white', 'dark:bg-midnight-blue', 'w-auto', 'shadow-2xl', 'text-sm')
             li.textContent = country
 
             bordersContainer.appendChild(li)
